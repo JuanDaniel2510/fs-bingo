@@ -1,0 +1,82 @@
+#viewport {
+  margin: auto;
+  width: 1400px;
+  display: flex;
+  flex-flow: column;
+  background-color: aqua;
+}
+
+h1 {
+  margin: auto;
+  font-size: 80px;
+  background-color: blue;
+}
+
+h2 {
+  margin: auto;
+  font-size: 40px;
+  background-color: springgreen;
+}
+
+.playport {
+  display: flex;
+  background-color: rebeccapurple;
+}
+
+.playarea {
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  background-color: salmon;
+}
+
+.board {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: steelblue;
+}
+
+.dice {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  background-color: snow;
+}
+
+.result {
+  font-size: 120px;
+  width: 180px;
+  height: 200px;
+  border: solid black 2px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: tomato;
+}
+
+.number {
+  font-size: 60px;
+  width: 86px;
+  height: 86px;
+  margin: 5px;
+  border: solid black 2px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tan;
+}
+
+.crosed {
+  border: solid red 2px !important;
+  color: red;
+  text-decoration: line-through;
+}
