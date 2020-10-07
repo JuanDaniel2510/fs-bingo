@@ -1,4 +1,6 @@
-import _ from "lodash";
+import { range, shuffle } from "lodash";
+// import { range, shuffle } from "lodash-es";
+// import _ from "lodash";
 
 let board = false;
 let ballArray = [];
@@ -7,7 +9,7 @@ const playerBoard = { val: [], dom: [], filled: [] };
 const cpuBoard = { val: [], dom: [], filled: [] };
 
 function getRandomArray(elements) {
-  const array = _.shuffle(_.range(0, 90));
+  const array = shuffle(range(0, 90));
   array.splice(0, 90 - elements);
   return array;
 }
