@@ -4,9 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel serve src/index.html",
+    "build": "parcel build src/index.html -d build --public-url /fs-bingo",
+    "deploy": "gh-pages -d build",
+    "launch": "parcel build src/index.html -d build --public-url /fs-bingo && gh-pages -d build",
+    "clean": "rm -rf dist build .cahe"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "JuanDaniel2510",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "parcel-bundler": "^1.12.4",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0"
+  }
 }
